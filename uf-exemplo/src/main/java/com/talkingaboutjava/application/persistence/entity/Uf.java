@@ -7,12 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Version;
-import javax.xml.bind.annotation.XmlRootElement;
 
 
 @Entity
 @Table(name = "UF")
-@XmlRootElement
 public class Uf implements Serializable {
 
 	/**

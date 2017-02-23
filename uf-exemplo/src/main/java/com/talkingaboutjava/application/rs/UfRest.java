@@ -20,17 +20,6 @@ public class UfRest {
 	@Path("buscaTodos")
 	@Produces("application/json")
 	public List<Uf> buscaTodos() {
-		List<Uf> ufs = ufService.buscaTodos();
-
-		return ufs;
-	}
-	
-	
-	@GET
-	@Path("teste")
-	@Produces("text/plain")
-	public String teste() {
-		List<Uf> ufs = ufService.buscaTodos();
-		return "teste "+ufs == null ? "0" : ufs.size()+"";
+		return ufService.buscaTodos();
 	}
 }
